@@ -1,3 +1,7 @@
+:root{
+    --fade-in-time: fadeIn ease 2.5s;
+}
+
 .logo {
     display: flex;
     align-items: center;
