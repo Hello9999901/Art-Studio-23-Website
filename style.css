@@ -1,20 +1,49 @@
 :root {
-    --anim-dur: 2s;
+    --anim-dur: 1s;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: Titillium-Regular;
+    src: url(fonts/TitilliumWeb-Regular.ttf);
+}
+@font-face {
+    font-family: Titillium-Bold;
+    src: url(fonts/TitilliumWeb-Bold.ttf);
+}
+@font-face {
+    font-family: Titillium-Light;
+    src: url(fonts/TitilliumWeb-Light.ttf);
+}
+@font-face {
+    font-family: Titillium-ExtraLight;
+    src: url(fonts/TitilliumWeb-ExtraLight.ttf);
+}
+@font-face {
+    font-family: Titillium-Black;
+    src: url(fonts/TitilliumWeb-Black.ttf);
+}
+@font-face {
+    font-family: Titillium-SemiBold;
+    src: url(fonts/TitilliumWeb-SemiBold.ttf);
 }
 
 .logoWrapper {
     display: flex;
     align-items: center;
-    margin-left: 26px;
+    margin-left: 35px;
     margin-top: 10px;
     height: 100px;
     width: auto;
-    animation: fadeIn;
-    animation-duration: var(--anim-dur);
 }
 
 .logo {
     transition: 0.3s;
+    animation: fadeInLeft;
+    animation-duration: var(--anim-dur);
 }
 
 .logo:hover {
@@ -22,27 +51,45 @@
 }
 
 .topBar {
-    margin-top: 10px;
+    z-index: 2;
     position: fixed;
-    height: 100px;
+    height: 125px;
     width: 100%;
     left: 0px;
     top: 0px;
-    background-color: rgba(235, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.topBarTextWrapper {
+    position: fixed;
+    right: 15px;
+    font-size: 40px;
+    margin-top: 3px;
+    font-family: Titillium-SemiBold;
+    animation: fadeInRight;
+    animation-duration: var(--anim-dur);
+}
+
+.topBarText {
+    padding-right: 13px;
+    text-decoration: none; 
+    padding-right: 25px;
+    color: black;
+    transition: 0.5s;
+}
+
+.topBarText:hover {
+    color: rgb(45, 21, 203);
 }
 
 .pictures {
     z-index: 1;
-    width: 47.5%;
+    width: 46.4%;
     height: auto;
     border-radius: 2px;
     margin-left: 8px;
     animation: fadeIn;
     animation-duration: var(--anim-dur);
     transition: 0.3s;
-    padding: 10px 10px 20px 10px;
-}
-
-.pictures:hover {
-    scale: 1.05;
+    padding: 10px 20px 20px 20px;
 }
