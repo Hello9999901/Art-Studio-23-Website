@@ -1,10 +1,48 @@
-:root{
-    --fade-in-time: fadeIn ease 2.5s;
+:root {
+    --anim-dur: 2s;
+}
+
+.logoWrapper {
+    display: flex;
+    align-items: center;
+    margin-left: 26px;
+    margin-top: 10px;
+    height: 100px;
+    width: auto;
+    animation: fadeIn;
+    animation-duration: var(--anim-dur);
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    margin-left: 15px;
-    height: 130px;
+    transition: 0.3s;
+}
+
+.logo:hover {
+    scale: 1.02;
+}
+
+.topBar {
+    margin-top: 10px;
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    background-color: rgba(235, 255, 255, 0);
+}
+
+.pictures {
+    z-index: 1;
+    width: 47.5%;
+    height: auto;
+    border-radius: 2px;
+    margin-left: 8px;
+    animation: fadeIn;
+    animation-duration: var(--anim-dur);
+    transition: 0.3s;
+    padding: 10px 10px 20px 10px;
+}
+
+.pictures:hover {
+    scale: 1.05;
 }
