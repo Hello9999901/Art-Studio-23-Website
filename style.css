@@ -165,3 +165,11 @@ body::-webkit-scrollbar {
     height: 41.667vw;
     width: 55.556vw;
 }
+
+/* SCREEN SIZE ADAPTIONS */
+
+@media screen and (max-width: 1024px) {
+    .box1 {
+        font-size: 40px;
+    }
+}

@@ -32,6 +32,56 @@
         integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 </head>
 
+<style>
+    .gridWrapper {
+        position: relative;
+        justify-content: center;
+        grid-template-columns: 30.639vw 30.639vw 30.972vw;
+        text-align: left;
+        display: grid;
+        grid-gap: 17px;
+        color: white;
+        font-family: Titillium-Regular;
+        animation: fadeInLeft;
+        animation-duration: var(--anim-dur);
+
+    }
+
+    .gridWrapper div {
+        position: relative;
+        background-color: rgba(255, 255, 255, 0.062);
+        border-width: 10px;
+        border-style: solid;
+        border-radius: 10px;
+
+        padding: 45px 75px 250px 75px;
+        font-size: 30px;
+    }
+
+    .box1 {
+        position: absolute;
+        border-color: rgb(246, 241, 10);
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .box4 {
+        position: absolute;
+        border-color: rgb(242, 29, 7);
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+
+    .box3 {
+        border-color: rgb(31, 28, 199);
+    }
+
+    .box2 {
+        border-color: rgb(31, 28, 199);
+    }
+    
+</style>
+
 <body style="background-color: black">
     <div class="topBar" id="topBar">
         <div class="logoWrapper">
@@ -50,6 +100,19 @@
             </div>
         </div>
         <div class="barColor">
+        </div>
+    </div>
+
+    <div class="mainBody">
+        <div class="gridWrapper">
+            <div class="box1">Mr. Jeff is the best. He founded Art Studio 23 in 2002. Mr. Jeff is the best. He founded
+                Art Studio 23 in 2002. Mr. Jeff is the best. He founded Art Studio 23 in 2002.</div>
+            <div class="box2">Mr. Jeff is the best. He founded Art Studio 23 in 2002. Mr. Jeff is the best. He founded
+                Art Studio 23 in 2002.</div>
+            <div class="box3">Mr. Jeff is the best. He founded Art Studio 23 in 2002. Mr. Jeff is the best. He founded
+                Art Studio 23 in 2002.</div>
+            <div class="box4">Mr. Jeff is the best. He founded Art Studio 23 in 2002. Mr. Jeff is the best. He founded
+                Art Studio 23 in 2002.</div>
         </div>
     </div>
 </body>

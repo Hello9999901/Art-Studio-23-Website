@@ -26,6 +26,8 @@
     <link rel="icon" type="image/png" href="#">
     <link rel="icon" type="image/png" href="#">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../../../Downloads/animated-hamburger-menu/dist/style.css">
+
     <script src="./scripts.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
@@ -44,7 +46,6 @@
         font-family: Titillium-Regular;
         animation: fadeInLeft;
         animation-duration: var(--anim-dur);
-
     }
 
     .gridWrapper div {
@@ -59,6 +60,42 @@
         grid-column-start: 1;
         grid-column-end: 3;
     }
+
+    @media screen and (max-width: 1112px) {
+        .gridWrapper div {
+            font-size: 25px;
+            padding: 45px 75px 100px 75px;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        .gridWrapper div {
+            font-size: 20px;
+        }
+
+        .topBarTextWrapper {
+            font-size: 30px;
+        }
+    }
+
+    @media screen and (max-width: 950px) {
+        .gridWrapper div {
+            padding: 45px 45px 75px 45px;
+            font-size: 17px;
+        }
+    }
+
+    @media screen and (max-width: 712px) {
+        .gridWrapper {
+            grid-template-columns: auto;
+        }
+    }
+
+    @media screen and (max-width: 708px) {
+        .gridWrapper {
+            grid-template-columns: 50vw;
+        }
+    }
 </style>
 
 <body style="background-color: black">
@@ -68,8 +105,7 @@
                 <picture>
                     <source type="image/jp2" srcset="./logo/ArtStudio23Logo.jp2">
                     <source type="image/webp" srcset="./logo/ArtStudio23Logo.webp">
-                    <img class="logo" src="./logo/ArtStudio23Logo.jpg"
-                        alt="Art Studio 23 Logo">
+                    <img class="logo" src="./logo/ArtStudio23Logo.jpg" alt="Art Studio 23 Logo">
                 </picture>
             </a>
             <div class="topBarTextWrapper">
@@ -96,6 +132,7 @@
                 Art Studio 23 in 2002.</div>
         </div>
     </div>
+    <script src="../../../Downloads/animated-hamburger-menu/dist/script.js"></script>
 </body>
 
 </html>
