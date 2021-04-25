@@ -1,31 +1,54 @@
+/* 
+    THEME COLORS:
+    rgb(35, 10, 189) = blue text on 23
+    rgb(246, 241, 10) = yellow ART STUDIO
+    rgb(242, 29, 7) = red line
+    rgb(255, 255, 255) = white
+    rgb(1, 0, 0) = black bkgrd 
+*/
+
 :root {
     --anim-dur: 1s;
+    --blue-art-studio-23: rgb(35, 10, 189);
+    --yellow-art-studio-23: rgb(246, 241, 10);
+    --red-art-studio-23: rgb(242, 29, 7);
 }
 
 body {
     overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 @font-face {
     font-family: Titillium-Regular;
     src: url(fonts/TitilliumWeb-Regular.ttf);
 }
+
 @font-face {
     font-family: Titillium-Bold;
     src: url(fonts/TitilliumWeb-Bold.ttf);
 }
+
 @font-face {
     font-family: Titillium-Light;
     src: url(fonts/TitilliumWeb-Light.ttf);
 }
+
 @font-face {
     font-family: Titillium-ExtraLight;
     src: url(fonts/TitilliumWeb-ExtraLight.ttf);
 }
+
 @font-face {
     font-family: Titillium-Black;
     src: url(fonts/TitilliumWeb-Black.ttf);
 }
+
 @font-face {
     font-family: Titillium-SemiBold;
     src: url(fonts/TitilliumWeb-SemiBold.ttf);
@@ -44,6 +67,7 @@ body {
     transition: 0.3s;
     animation: fadeInLeft;
     animation-duration: var(--anim-dur);
+    height: 100px;
 }
 
 .logo:hover {
@@ -51,13 +75,14 @@ body {
 }
 
 .topBar {
+    transition: 0.6s;
     z-index: 2;
     position: fixed;
     height: 125px;
     width: 100%;
     left: 0px;
     top: 0px;
-    background-color: rgba(61, 61, 61, 0.8);
+    background-color: rgba(43, 43, 43, 0.577);
 }
 
 .topBarTextWrapper {
@@ -71,8 +96,8 @@ body {
 }
 
 .topBarText {
-    padding-right: 13px;
-    text-decoration: none; 
+    margin-right: 13px;
+    text-decoration: none;
     padding-right: 25px;
     color: rgb(255, 255, 255);
     transition: 0.5s;
@@ -80,6 +105,17 @@ body {
 
 .topBarText:hover {
     color: rgb(120, 156, 223);
+}
+
+.barColor {
+    position: fixed;
+    right: 0px;
+    width: 100%;
+    background-color: rgba(47, 91, 186, 0.823);
+    margin-top: 10px;
+    height: 10px;
+    animation: zoomIn;
+    animation-duration: var(--anim-dur);
 }
 
 .pictures {
@@ -92,4 +128,40 @@ body {
     animation-duration: var(--anim-dur);
     transition: 0.3s;
     padding: 10px 20px 20px 20px;
+}
+
+.mainBody {
+    position: absolute;
+    margin-top: 139px;
+    width: 100vw;
+    right: 0px;
+}
+
+.locationMapWrapper {
+    position: absolute;
+    animation: fadeInRight;
+    animation-duration: var(--anim-dur);
+    margin: auto;
+    display: block;
+}
+
+.locationTextWrapper {
+    position: absolute;
+    animation: fadeInLeft;
+    animation-duration: var(--anim-dur);
+}
+
+.locationTextWrapper p {
+    margin: 0px;
+    font-size: 22px;
+}
+
+.locationTextWrapper .title {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.map {
+    height: 41.667vw;
+    width: 55.556vw;
 }
