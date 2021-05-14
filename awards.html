@@ -26,11 +26,32 @@
     <link rel="icon" type="image/png" href="#">
     <link rel="icon" type="image/png" href="#">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./menu.css">
+    <link rel="stylesheet" href="./loader.css">
     <script src="./scripts.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
         integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 </head>
+
+<style>
+    .awardsWrapper {
+        visibility: collapse;
+    }
+
+    #loaderWrapper {
+        visibility: visible;
+    }
+</style>
+
+<script>
+    console.log("hello")
+    window.onload = (event) => {
+        document.getElementById('awardsWrapper').style.visibility = 'visible';
+        setTimeout(() => { document.getElementById('loaderWrapper').style.visibility = 'hidden'; }, 2000);
+    };
+</script>
 
 <body style="background-color: black">
     <div class="topBar" id="topBar">
@@ -39,8 +60,7 @@
                 <picture>
                     <source type="image/jp2" srcset="./logo/ArtStudio23Logo.jp2">
                     <source type="image/webp" srcset="./logo/ArtStudio23Logo.webp">
-                    <img class="logo" src="./logo/ArtStudio23Logo.jpg"
-                        alt="Art Studio 23 Logo">
+                    <img class="logo" src="./logo/ArtStudio23Logo.jpg" alt="Art Studio 23 Logo">
                 </picture>
             </a>
             <div class="topBarTextWrapper">
@@ -53,7 +73,36 @@
         </div>
     </div>
 
-    <div style="margin-top: 140px;">
+    <nav role="navigation">
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <a href="about.html">
+                    <li>About</li>
+                </a>
+                <a href="location.html">
+                    <li>Location</li>
+                </a>
+                <a href="awards.html">
+                    <li>Awards</li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="loaderWrapper">
+        <div id="loader">
+        </div>
+    </div>
+
+
+    <div style="margin-top: 140px;" class="awardsWrapper" id="awardsWrapper">
         <picture>
             <source type="image/jp2" srcset="./media/jp2/christaJeff.jp2">
             <source type="image/webp" srcset="./media/webp/christaJeff.webp">
@@ -63,98 +112,82 @@
         <picture>
             <source type="image/jp2" srcset="./media/jp2/christaLetters.jp2">
             <source type="image/webp" srcset="./media/webp/christaLetters.webp">
-            <img class="pictures" src="./media/jpg/christaLetters.jpg"
-                alt="Description">
+            <img class="pictures" src="./media/jpg/christaLetters.jpg" alt="Description">
         </picture>
         <picture>
             <source type="image/jp2" srcset="./media/jp2/christaPainting.jp2">
             <source type="image/webp" srcset="./media/webp/christaPainting.webp">
-            <img class="pictures" src="./media/jpg/christaPainting.jpg"
-                alt="Description">
+            <img class="pictures" src="./media/jpg/christaPainting.jpg" alt="Description">
         </picture>
         <picture>
             <source type="image/jp2" srcset="./media/jp2/connorDesign.jp2">
             <source type="image/webp" srcset="./media/webp/connorDesign.webp">
-            <img class="pictures" src="./media/jpg/connorDesign.jpg"
-                alt="Description">
+            <img class="pictures" src="./media/jpg/connorDesign.jpg" alt="Description">
         </picture>
         <picture>
             <source type="image/jp2" srcset="./media/jp2/aaronArchitecture.jp2">
             <source type="image/webp" srcset="./media/webp/aaronArchitecture.webp">
-            <img class="pictures" src="./media/jpg/aaronArchitecture.jpg"
-                alt="Description">
+            <img class="pictures" src="./media/jpg/aaronArchitecture.jpg" alt="Description">
         </picture>
         <picture>
             <source type="image/jp2" srcset="./media/jp2/christaCombination.jp2">
             <source type="image/webp" srcset="./media/webp/christaCombination.webp">
-            <img class="pictures" src="./media/jpg/christaCombination.jpg"
-                alt="Description">
+            <img class="pictures" src="./media/jpg/christaCombination.jpg" alt="Description">
         </picture>
         <picture>
             <source type="image/jp2" srcset="./media/jp2/emilyYeDesign.jp2">
             <source type="image/webp" srcset="./media/webp/emilyYeDesign.webp">
-            <img class="pictures" src="./media/jpg/emilyYeDesign.jpg"
-                alt="Description">
+            <img class="pictures" src="./media/jpg/emilyYeDesign.jpg" alt="Description">
         </picture>
         <picture>
             <source type="image/jp2" srcset="./media/jp2/evelynShiangArt.jp2">
             <source type="image/webp" srcset="./media/webp/evelynShiangArt.webp">
-            <img class="pictures" src="./media/jpg/evelynShiangArt.jpg"
-                alt="Description">
+            <img class="pictures" src="./media/jpg/evelynShiangArt.jpg" alt="Description">
         </picture>
         <picture>
             <source type="image/jp2" srcset="./media/jp2/evelynShiangArt2.jp2">
             <source type="image/webp" srcset="./media/webp/evelynShiangArt2.webp">
-            <img class="pictures" src="./media/jpg/evelynShiangArt2.jpg"
-                alt="Description">
+            <img class="pictures" src="./media/jpg/evelynShiangArt2.jpg" alt="Description">
         </picture>
         <picture>
             <source type="image/jp2" srcset="./media/jp2/fashionAward18-19.jp2">
             <source type="image/webp" srcset="./media/webp/fashionAward18-19.webp">
-            <img class="pictures" src="./media/jpg/fashionAward18-19.jpg"
-                alt="Description">
+            <img class="pictures" src="./media/jpg/fashionAward18-19.jpg" alt="Description">
         </picture>
         <picture>
             <source type="image/jp2" srcset="./media/jp2/fashionAward19.jp2">
             <source type="image/webp" srcset="./media/webp/fashionAward19.webp">
-            <img class="pictures" src="./media/jpg/fashionAward19.jpg"
-                alt="Description">
+            <img class="pictures" src="./media/jpg/fashionAward19.jpg" alt="Description">
         </picture>
         <picture>
             <source type="image/jp2" srcset="./media/jp2/fashionAward20.jp2">
             <source type="image/webp" srcset="./media/webp/fashionAward20.webp">
-            <img class="pictures" src="./media/jpg/fashionAward20.jpg"
-                alt="Description">
+            <img class="pictures" src="./media/jpg/fashionAward20.jpg" alt="Description">
         </picture>
         <picture>
             <source type="image/jp2" srcset="./media/jp2/fashionAward21.jp2">
             <source type="image/webp" srcset="./media/webp/fashionAward21.webp">
-            <img class="pictures" src="./media/jpg/fashionAward21.jpg"
-                alt="Description">
+            <img class="pictures" src="./media/jpg/fashionAward21.jpg" alt="Description">
         </picture>
         <picture>
             <source type="image/jp2" srcset="./media/jp2/isabelleArt.jp2">
             <source type="image/webp" srcset="./media/webp/isabelleArt.webp">
-            <img class="pictures" src="./media/jpg/isabelleArt.jpg"
-                alt="Description">
+            <img class="pictures" src="./media/jpg/isabelleArt.jpg" alt="Description">
         </picture>
         <picture>
             <source type="image/jp2" srcset="./media/jp2/isabelleArt2.jp2">
             <source type="image/webp" srcset="./media/webp/isabelleArt2.webp">
-            <img class="pictures" src="./media/jpg/isabelleArt2.jpg"
-                alt="Description">
+            <img class="pictures" src="./media/jpg/isabelleArt2.jpg" alt="Description">
         </picture>
         <picture>
             <source type="image/jp2" srcset="./media/jp2/nicoleDesign.jp2">
             <source type="image/webp" srcset="./media/webp/nicoleDesign.webp">
-            <img class="pictures" src="./media/jpg/nicoleDesign.jpg"
-                alt="Description">
+            <img class="pictures" src="./media/jpg/nicoleDesign.jpg" alt="Description">
         </picture>
         <picture>
             <source type="image/jp2" srcset="./media/jp2/yiLiFashion.jp2">
             <source type="image/webp" srcset="./media/webp/yiLiFashion.webp">
-            <img class="pictures" src="./media/jpg/yiLiFashion.jpg"
-                alt="Description">
+            <img class="pictures" src="./media/jpg/yiLiFashion.jpg" alt="Description">
         </picture>
     </div>
 </body>

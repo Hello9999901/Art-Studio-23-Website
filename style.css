@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /* 
     THEME COLORS:
     rgb(35, 10, 189) = blue text on 23
@@ -15,6 +22,8 @@
 }
 
 body {
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -55,8 +64,12 @@ body::-webkit-scrollbar {
 }
 
 .logoWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-left: 35px;
     margin-top: 13px;
     height: 100px;
@@ -64,9 +77,13 @@ body::-webkit-scrollbar {
 }
 
 .logo {
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
-    animation: fadeInLeft;
-    animation-duration: var(--anim-dur);
+    -webkit-animation: fadeInLeft;
+            animation: fadeInLeft;
+    -webkit-animation-duration: var(--anim-dur);
+            animation-duration: var(--anim-dur);
     height: 100px;
 }
 
@@ -75,6 +92,8 @@ body::-webkit-scrollbar {
 }
 
 .topBar {
+    -webkit-transition: 0.6s;
+    -o-transition: 0.6s;
     transition: 0.6s;
     z-index: 2;
     position: fixed;
@@ -91,8 +110,10 @@ body::-webkit-scrollbar {
     font-size: 40px;
     margin-top: 3px;
     font-family: Titillium-SemiBold;
-    animation: fadeInRight;
-    animation-duration: var(--anim-dur);
+    -webkit-animation: fadeInRight;
+            animation: fadeInRight;
+    -webkit-animation-duration: var(--anim-dur);
+            animation-duration: var(--anim-dur);
 }
 
 .topBarText {
@@ -100,6 +121,8 @@ body::-webkit-scrollbar {
     text-decoration: none;
     padding-right: 25px;
     color: rgb(255, 255, 255);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 
@@ -114,8 +137,10 @@ body::-webkit-scrollbar {
     background-color: rgba(47, 91, 186, 0.823);
     margin-top: 10px;
     height: 10px;
-    animation: zoomIn;
-    animation-duration: var(--anim-dur);
+    -webkit-animation: zoomIn;
+            animation: zoomIn;
+    -webkit-animation-duration: var(--anim-dur);
+            animation-duration: var(--anim-dur);
 }
 
 .pictures {
@@ -124,8 +149,12 @@ body::-webkit-scrollbar {
     height: auto;
     border-radius: 2px;
     margin-left: 8px;
-    animation: fadeIn;
-    animation-duration: var(--anim-dur);
+    -webkit-animation: fadeIn;
+            animation: fadeIn;
+    -webkit-animation-duration: var(--anim-dur);
+            animation-duration: var(--anim-dur);
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
     padding: 10px 20px 20px 20px;
 }
@@ -139,16 +168,20 @@ body::-webkit-scrollbar {
 
 .locationMapWrapper {
     position: absolute;
-    animation: fadeInRight;
-    animation-duration: var(--anim-dur);
+    -webkit-animation: fadeInRight;
+            animation: fadeInRight;
+    -webkit-animation-duration: var(--anim-dur);
+            animation-duration: var(--anim-dur);
     margin: auto;
     display: block;
 }
 
 .locationTextWrapper {
     position: absolute;
-    animation: fadeInLeft;
-    animation-duration: var(--anim-dur);
+    -webkit-animation: fadeInLeft;
+            animation: fadeInLeft;
+    -webkit-animation-duration: var(--anim-dur);
+            animation-duration: var(--anim-dur);
 }
 
 .locationTextWrapper p {
@@ -171,5 +204,11 @@ body::-webkit-scrollbar {
 @media screen and (max-width: 1024px) {
     .box1 {
         font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 816px) {
+    .topBarTextWrapper {
+        visibility: hidden !important;
     }
 }

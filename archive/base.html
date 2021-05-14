@@ -26,6 +26,7 @@
     <link rel="icon" type="image/png" href="#">
     <link rel="icon" type="image/png" href="#">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./menu.css">
     <script src="./scripts.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
@@ -39,8 +40,7 @@
                 <picture>
                     <source type="image/jp2" srcset="./logo/ArtStudio23Logo.jp2">
                     <source type="image/webp" srcset="./logo/ArtStudio23Logo.webp">
-                    <img class="logo" src="./logo/ArtStudio23Logo.jpg"
-                        alt="Art Studio 23 Logo">
+                    <img class="logo" src="./logo/ArtStudio23Logo.jpg" alt="Art Studio 23 Logo">
                 </picture>
             </a>
             <div class="topBarTextWrapper">
@@ -53,7 +53,30 @@
         </div>
     </div>
 
-    
+    <nav role="navigation">
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <a href="about.html">
+                    <li>About</li>
+                </a>
+                <a href="location.html">
+                    <li>Location</li>
+                </a>
+                <a href="awards.html">
+                    <li>Awards</li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+
+
 </body>
 
 </html>

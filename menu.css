@@ -1,0 +1,167 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+/*
+ * Made by Erik Terwan and Modifed By Hello9999901 (https://www.byran.tech)
+ * 24th of November 2015 and Modified May 13th 2021
+ * MIT License
+ */
+
+#menuToggle {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 50px;
+    right: 50px;
+    z-index: 2;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: Titillium-Light;
+}
+
+#menuToggle a {
+    text-decoration: none;
+    color: #dfdfdf;
+    -webkit-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+
+#menuToggle a:hover {
+    color: rgb(246, 241, 10);
+}
+
+
+#menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    -webkit-touch-callout: none;
+    scale: 1.2;
+}
+
+#menuToggle span {
+    display: block;
+    width: 50px;
+    height: 5.5px;
+    margin-bottom: 7.5px;
+    position: relative;
+    background: #cdcdcd;
+    border-radius: 3px;
+    z-index: 1;
+    -webkit-transform-origin: 4px 0px;
+    -ms-transform-origin: 4px 0px;
+    transform-origin: 4px 0px;
+    -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        opacity 15s ease,
+        -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        opacity 15s ease,
+        -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    -o-transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        opacity 15s ease;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        opacity 15s ease;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        opacity 15s ease,
+        -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+#menuToggle span:first-child {
+    -webkit-transform-origin: 0% 0%;
+    -ms-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+    -webkit-transform-origin: 0% 100%;
+    -ms-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+}
+
+/* 
+transform to "x"
+  */
+#menuToggle input:checked~span {
+    opacity: 1;
+    -webkit-transform: rotate(45deg) translate(-5px, -2px);
+    -ms-transform: rotate(45deg) translate(-5px, -2px);
+    transform: rotate(45deg) translate(-5px, -2px);
+    background: #e7e7e7;
+}
+
+/*
+  * hide middle
+  */
+#menuToggle input:checked~span:nth-last-child(3) {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: rotate(0deg) scale(0.2, 0.2);
+    -ms-transform: rotate(0deg) scale(0.2, 0.2);
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked~span:nth-last-child(2) {
+    -webkit-transform: rotate(-45deg) translate(0, -1px);
+    -ms-transform: rotate(-45deg) translate(0, -1px);
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+
+/*
+absolute top left
+  */
+#menu {
+    position: fixed;
+    width: 200px;
+    height: 100vh;
+    margin: -100px 0 0 -200px;
+    padding: 50px;
+    padding-top: 125px;
+    background: rgba(37, 37, 37, 0.816);
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    -webkit-transform-origin: 0% 0%;
+    -ms-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    -webkit-transform: translate(100%, 0);
+    -ms-transform: translate(100%, 0);
+    transform: translate(100%, 0);
+    -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    -o-transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+#menu li {
+    padding: 10px 0;
+    font-size: 30px;
+}
+
+#menuToggle input:checked~ul {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+}
+
+@media screen and (max-width: 816px) {
+    #menuToggle {
+        visibility: visible !important;
+    }
+}
