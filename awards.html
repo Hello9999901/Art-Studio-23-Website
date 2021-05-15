@@ -39,19 +39,7 @@
     .awardsWrapper {
         visibility: collapse;
     }
-
-    #loaderWrapper {
-        visibility: visible;
-    }
 </style>
-
-<script>
-    console.log("hello")
-    window.onload = (event) => {
-        document.getElementById('awardsWrapper').style.visibility = 'visible';
-        setTimeout(() => { document.getElementById('loaderWrapper').style.visibility = 'hidden'; }, 2000);
-    };
-</script>
 
 <body style="background-color: black">
     <div class="topBar" id="topBar">
@@ -71,6 +59,10 @@
         </div>
         <div class="barColor">
         </div>
+    </div>
+
+    <div id="loaderWrapper">
+        <div class="loader" id="loader"></div>
     </div>
 
     <nav role="navigation">
@@ -95,12 +87,6 @@
             </ul>
         </div>
     </nav>
-
-    <div id="loaderWrapper">
-        <div id="loader">
-        </div>
-    </div>
-
 
     <div style="margin-top: 140px;" class="awardsWrapper" id="awardsWrapper">
         <picture>

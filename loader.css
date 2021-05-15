@@ -1,4 +1,4 @@
-#loader {
+.loader {
   visibility: visible;
   z-index: 2;
   position: absolute;
@@ -13,7 +13,11 @@
           animation: load 1.8s ease-in-out infinite;
 }
 
-#loader:before, #loader:after {
+#loaderWrapper {
+  visibility: visible;
+}
+
+.loader:before, .loader:after {
   position: absolute;
   display: block;
   content: "";
@@ -23,14 +27,14 @@
   border-radius: 5px;
 }
 
-#loader:before {
+.loader:before {
   top: -20px;
   left: 10px;
   width: 40px;
   background: #ef4836;
 }
 
-#loader:after {
+.loader:after {
   bottom: -20px;
   width: 35px;
   background: #f5ab35;
