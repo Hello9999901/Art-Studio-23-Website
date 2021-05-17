@@ -2,15 +2,52 @@
 Website of Art Studio 23
 
 ## DOCUMENTATION:
+#
+### PLEASE READ: This documentation may look boring and long, but it is important that you understand the basics of how this website works.
+
+#### This website is made using HTML (HyperText Markup Language), CSS (Cascading Style Sheets), and JS (JavaScript). All usage is stricly vanilla.
+
+### Third-party libraries include:
+ - Animate.css (for animation)
+ - jQuery (for simplifying JS code, not used often)
+
+#### IMPORTANT NOTES:
+ - If you don't know how to use GitHub, please read this PDF (very short, very well-made with lots of easy-to-understand graphics). https://training.github.com/downloads/github-git-cheat-sheet.pdf
+ - The website is hosted with GitHub Pages. It is called an enviornment.
+ - I am Hello9999901. You'll find that I have edited all the files (as I made the website). Don't fret -- you haven't been hacked.
+ - Feel free to add more files as needed
+ - Be careful with what you do, despite all of GitHub's file versioning protections and precautions
+ - Have fun editing it :)
+ - Most importantly, don't lose your mind
+
+#
+
+## File-directory tree:
+#### This file tree, which lists files in order, will be updated as files get added/removed.
+#### Please read all annotations, which will be written after a "#"
+#### Also, There will be a "E" or "N" in parenthesis after the annotation, indicating whether you should edit the file. Remember, you are welcome to look at or edit any file, the "E/N" indication only shows whether it is recommended to edit the file.
+
+### For example:
 ```
-├── CNAME
-├── README.md
-├── TEST.html
-├── about.html
-├── archive
-│   └── base.html
-├── awards.html
-├── fonts
+├── example.html # ANNOTATION GOES (E/N)
+```
+# Tree:
+```
+├── CNAME         # Has domain name
+├── index.html    # MAIN PAGE
+├── about.html    # About page
+├── awards.html   # Awards page
+├── location.html # Location page
+├── menu.css      # CSS for hamburger menu 
+├── style.css     # MAIN CSS FILE
+├── loader.css    # CSS for loading animation
+├── TEST.html     # HTML file for testing
+├── test2.html    # Another test html file
+├── README.md     # What you're reading right now
+├── scripts.js    # JavaScript scripts
+├── archive       # archive folder
+│   └── base.html # This is a skeleton file
+├── fonts # Fonts (feel free to add more)
 │   ├── TitilliumWeb-Black.ttf
 │   ├── TitilliumWeb-Bold.ttf
 │   ├── TitilliumWeb-BoldItalic.ttf
@@ -22,16 +59,13 @@ Website of Art Studio 23
 │   ├── TitilliumWeb-Regular.ttf
 │   ├── TitilliumWeb-SemiBold.ttf
 │   └── TitilliumWeb-SemiBoldItalic.ttf
-├── index.html
-├── loader.css
-├── location.html
-├── logo
+├── logo # Different versions of the logo
 │   ├── ArtStudio23Logo.jp2
 │   ├── ArtStudio23Logo.jpg
 │   ├── ArtStudio23Logo.webp
 │   └── referenceLogo.png
-├── media
-│   ├── jp2
+├── media # all the pictures
+│   ├── jp2 # jp2 version (for Safari)
 │   │   ├── aaronArchitecture.jp2
 │   │   ├── christaCombination.jp2
 │   │   ├── christaJeff.jp2
@@ -49,7 +83,7 @@ Website of Art Studio 23
 │   │   ├── isabelleArt2.jp2
 │   │   ├── nicoleDesign.jp2
 │   │   └── yiLiFashion.jp2
-│   ├── jpg
+│   ├── jpg # jpg version (fallback file format)
 │   │   ├── aaronArchitecture.jpg
 │   │   ├── christaCombination.jpg
 │   │   ├── christaJeff.jpg
@@ -67,7 +101,7 @@ Website of Art Studio 23
 │   │   ├── isabelleArt2.jpg
 │   │   ├── nicoleDesign.jpg
 │   │   └── yiLiFashion.jpg
-│   ├── srcArchive
+│   ├── srcArchive # uncompressed images
 │   │   ├── aaronArchitecture.jpg
 │   │   ├── christaCombination.jpg
 │   │   ├── christaJeff.jpg
@@ -85,7 +119,7 @@ Website of Art Studio 23
 │   │   ├── isabelleArt2.jpg
 │   │   ├── nicoleDesign.jpg
 │   │   └── yiLiFashion.jpg
-│   └── webp
+│   └── webp # webp version (for Chrome)
 │       ├── aaronArchitecture.webp
 │       ├── christaCombination.webp
 │       ├── christaJeff.webp
@@ -103,9 +137,6 @@ Website of Art Studio 23
 │       ├── isabelleArt2.webp
 │       ├── nicoleDesign.webp
 │       └── yiLiFashion.webp
-├── menu.css
-├── out.html
-├── scripts.js
-├── style.css
-└── test2.html
+└── END OF FILE TREE
 ```
+
