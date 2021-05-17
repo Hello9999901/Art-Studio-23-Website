@@ -2,6 +2,7 @@
 Website of Art Studio 23
 
 ## DOCUMENTATION:
+```
 ├── CNAME
 ├── README.md
 ├── TEST.html
@@ -107,3 +108,4 @@ Website of Art Studio 23
 ├── scripts.js
 ├── style.css
 └── test2.html
+```
