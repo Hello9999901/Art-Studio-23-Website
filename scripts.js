@@ -10,12 +10,5 @@ window.onscroll = function () {
 }
 
 window.onload = (event) => {
-  document.getElementById('loaderWrapper').style.visibility = 'visible';
-  document.getElementById('loader').style.visibility = 'visible';
   document.getElementById('awardsWrapper').style.visibility = 'visible';
-  setTimeout(function () {
-    console.log("waiting");
-  }, 3000);
-  document.getElementById('loaderWrapper').style.visibility = 'hidden';
-  document.getElementById('loader').style.visibility = 'hidden';
 };

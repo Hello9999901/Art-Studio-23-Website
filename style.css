@@ -68,8 +68,8 @@ body::-webkit-scrollbar {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     margin-left: 35px;
     margin-top: 13px;
     height: 100px;
@@ -81,9 +81,9 @@ body::-webkit-scrollbar {
     -o-transition: 0.3s;
     transition: 0.3s;
     -webkit-animation: fadeInLeft;
-            animation: fadeInLeft;
+    animation: fadeInLeft;
     -webkit-animation-duration: var(--anim-dur);
-            animation-duration: var(--anim-dur);
+    animation-duration: var(--anim-dur);
     height: 100px;
 }
 
@@ -111,9 +111,9 @@ body::-webkit-scrollbar {
     margin-top: 3px;
     font-family: Titillium-SemiBold;
     -webkit-animation: fadeInRight;
-            animation: fadeInRight;
+    animation: fadeInRight;
     -webkit-animation-duration: var(--anim-dur);
-            animation-duration: var(--anim-dur);
+    animation-duration: var(--anim-dur);
 }
 
 .topBarText {
@@ -138,9 +138,9 @@ body::-webkit-scrollbar {
     margin-top: 10px;
     height: 10px;
     -webkit-animation: zoomIn;
-            animation: zoomIn;
+    animation: zoomIn;
     -webkit-animation-duration: var(--anim-dur);
-            animation-duration: var(--anim-dur);
+    animation-duration: var(--anim-dur);
 }
 
 .pictures {
@@ -150,9 +150,9 @@ body::-webkit-scrollbar {
     border-radius: 2px;
     margin-left: 8px;
     -webkit-animation: fadeIn;
-            animation: fadeIn;
+    animation: fadeIn;
     -webkit-animation-duration: var(--anim-dur);
-            animation-duration: var(--anim-dur);
+    animation-duration: var(--anim-dur);
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
@@ -169,9 +169,9 @@ body::-webkit-scrollbar {
 .locationMapWrapper {
     position: absolute;
     -webkit-animation: fadeInRight;
-            animation: fadeInRight;
+    animation: fadeInRight;
     -webkit-animation-duration: var(--anim-dur);
-            animation-duration: var(--anim-dur);
+    animation-duration: var(--anim-dur);
     margin: auto;
     display: block;
 }
@@ -179,9 +179,9 @@ body::-webkit-scrollbar {
 .locationTextWrapper {
     position: absolute;
     -webkit-animation: fadeInLeft;
-            animation: fadeInLeft;
+    animation: fadeInLeft;
     -webkit-animation-duration: var(--anim-dur);
-            animation-duration: var(--anim-dur);
+    animation-duration: var(--anim-dur);
 }
 
 .locationTextWrapper p {
@@ -199,16 +199,92 @@ body::-webkit-scrollbar {
     width: 55.556vw;
 }
 
-/* SCREEN SIZE ADAPTIONS */
+/* 
+██████████████████████████████████████████████████████████████████████████████████
+██████████████████████████████████████████████████████████████████████████████████
+██████████████████████████████████████████████████████████████████████████████████
+██████████████████████████████████████████████████████████████████████████████████
+█████████████████████████████████LOADER███████████████████████████████████████████
+██████████████████████████████████████████████████████████████████████████████████
+██████████████████████████████████████████████████████████████████████████████████
+██████████████████████████████████████████████████████████████████████████████████
+██████████████████████████████████████████████████████████████████████████████████
+██████████████████████████████████████████████████████████████████████████████████
+██████████████████████████████████████████████████████████████████████████████████
+██████████████████████████████████████████████████████████████████████████████████
+██████████████████████████████████████████████████████████████████████████████████
+██████████████████████████████████████████████████████████████████████████████████
+██████████████████████████████████████████████████████████████████████████████████ 
+*/
 
-@media screen and (max-width: 1024px) {
-    .box1 {
-        font-size: 40px;
+
+.loader {
+    visibility: visible;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 10px;
+    background: #3498db;
+    border-radius: 5px;
+    -webkit-animation: load 1.8s ease-in-out infinite;
+    animation: load 1.8s ease-in-out infinite;
+}
+
+#loaderWrapper {
+    visibility: visible;
+}
+
+.loader:before,
+.loader:after {
+    position: absolute;
+    display: block;
+    content: "";
+    -webkit-animation: load 1.8s ease-in-out infinite;
+    animation: load 1.8s ease-in-out infinite;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.loader:before {
+    top: -20px;
+    left: 10px;
+    width: 40px;
+    background: #ef4836;
+}
+
+.loader:after {
+    bottom: -20px;
+    width: 35px;
+    background: #f5ab35;
+}
+
+@-webkit-keyframes load {
+    0% {
+        transform: translateX(40px);
+    }
+
+    50% {
+        transform: translateX(-30px);
+    }
+
+    100% {
+        transform: translateX(40px);
     }
 }
 
-@media screen and (max-width: 816px) {
-    .topBarTextWrapper {
-        visibility: hidden !important;
+@keyframes load {
+    0% {
+        transform: translateX(40px);
+    }
+
+    50% {
+        transform: translateX(-30px);
+    }
+
+    100% {
+        transform: translateX(40px);
     }
 }

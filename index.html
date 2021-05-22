@@ -30,8 +30,8 @@
     <link rel="stylesheet" href="../../../Downloads/animated-hamburger-menu/dist/style.css">
 
     <script src="./scripts.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.max.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.max.js"
         integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 </head>
 
@@ -53,7 +53,6 @@
         position: relative;
         background-color: rgba(255, 255, 255, 0.111);
         padding: 45px 75px 250px 75px;
-        font-size: 30px;
         border-radius: 10px;
     }
 
@@ -83,40 +82,24 @@
         padding: 30px 75px 30px 75px !important;
     }
 
-    @media screen and (max-width: 1112px) {
-        .gridWrapper div {
-            font-size: 25px;
-            padding: 45px 75px 100px 75px;
-        }
+    .text {
+        font-family: Titillium-Light;
+        font-size: calc(5px + 1.389vw) !important;
     }
 
-    @media screen and (max-width: 1024px) {
-        .gridWrapper div {
-            font-size: 20px;
-        }
-
-        .topBarTextWrapper {
-            font-size: 30px;
-        }
+    .boldText {
+        font-family: Titillium-Light;
+        font-size: calc(10px + 1.389vw) !important;
     }
 
-    @media screen and (max-width: 950px) {
-        .gridWrapper div {
-            padding: 45px 45px 75px 45px;
-            font-size: 17px;
-        }
+    .welcomeText {
+        font-size: calc(15px + 1.5vw);
     }
 
-    @media screen and (max-width: 712px) {
-        .gridWrapper {
-            grid-template-columns: auto;
-        }
-    }
-
-    @media screen and (max-width: 708px) {
-        .gridWrapper {
-            grid-template-columns: 50vw;
-        }
+    .welcomeLowerText {
+        color: rgb(211, 211, 211);
+        font-family: Titillium-ExtraLight;
+        font-size: calc(1.389vw + 5px);
     }
 </style>
 
@@ -132,7 +115,7 @@
             </a>
             <div class="topBarTextWrapper">
                 <a class="topBarText" href="./about.html">About</a>
-                <a class="topBarText" href="./location.html">Location</a>
+                <a class="topBarText" href="./location.html">Location & Contacts</a>
                 <a class="topBarText" href="./awards.html">Awards</a>
             </div>
         </div>
@@ -154,7 +137,7 @@
                     <li>About</li>
                 </a>
                 <a href="location.html">
-                    <li>Location</li>
+                    <li>Location & Contacts</li>
                 </a>
                 <a href="awards.html">
                     <li>Awards</li>
@@ -166,38 +149,38 @@
     <div class="mainBody">
         <div class="gridWrapper">
             <div class="box1">
-                <b style="font-size: 35px;">
-                    — WELCOME TO THE OFFICAL WEBSITE OF THE ART STUDIO 23! —
+                <b class="welcomeText">
+                    WELCOME TO THE OFFICAL WEBSITE OF THE ART STUDIO 23!
                 </b>
                 <br>
-                <y style="color: rgb(211, 211, 211); font-family: Titillium-ExtraLight; font-size: 26px;">
-                    — EDUCATING, EXPLORING & INSPIRING OUR BEAUTIFUL COMMUNITY —
-                </y>
+                <p class="welcomeLowerText">
+                    EDUCATING, EXPLORING & INSPIRING OUR BEAUTIFUL COMMUNITY!
+                </p>
             </div>
             <div class="box2">
-                <b>
+                <b class="boldText">
                     URENT NOTICES:
                 </b>
                 <br>
-                <y style="font-family: Titillium-Light; font-size: 25px;">
+                <p class="text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Velit egestas dui id ornare arcu. Velit scelerisque in dictum non. Mi
                     bibendum neque egestas congue quisque egestas diam in. Sit amet tellus cras adipiscing enim eu
                     turpis egestas.
-                </y>
+                </p>
             </div>
             <div class="box3">
-                <b>
+                <b class="boldText">
                     UPCOMING EVENTS:
                 </b>
                 <br>
-                <y style="font-family: Titillium-Light; font-size: 25px;">
+                <p class="text">
                     Velit egestas dui id ornare arcu. Velit scelerisque in dictum non. Mi
                     bibendum neque egestas congue quisque egestas diam in. Sit amet tellus cras adipiscing enim eu
                     turpis egestas.
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua.
-                </y>
+                </p>
             </div>
             <div class="box4">
                 SPONSORS HERE

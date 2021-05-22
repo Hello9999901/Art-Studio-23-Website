@@ -12,6 +12,7 @@
  */
 
 #menuToggle {
+    opacity: 0;
     display: block;
     position: fixed;
     visibility: hidden;
@@ -162,6 +163,7 @@ absolute top left
 
 @media screen and (max-width: 816px) {
     #menuToggle {
-        visibility: visible !important;
+        opacity: 1;
+        visibility: visible;
     }
 }
