@@ -33,69 +33,6 @@
         integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 </head>
 
-<style>
-    .gridWrapper {
-        position: relative;
-        justify-content: center;
-        grid-template-columns: 30.639vw 30.639vw 30.972vw;
-        text-align: left;
-        display: grid;
-        grid-gap: 17px;
-        color: white;
-        font-family: Titillium-Regular;
-        animation: fadeInLeft;
-        animation-duration: var(--anim-dur);
-
-    }
-
-    .gridWrapper div {
-        position: relative;
-        background-color: rgba(255, 255, 255, 0.062);
-        border-width: 10px;
-        border-style: solid;
-        border-radius: 10px;
-        padding: 35px 45px 35px 45px;
-        font-size: 25px;
-    }
-
-
-    @media screen and (max-width: 1024px) {
-        .gridWrapper div {
-            font-size: 20px;
-        }
-    }
-
-    .box1 {
-        position: absolute;
-        border-color: rgb(242, 29, 7);
-        grid-column-start: 1;
-        grid-column-end: 3;
-    }
-
-    .box4 {
-        position: absolute;
-        border-color: rgb(246, 241, 10);
-        grid-column-start: 2;
-        grid-column-end: 4;
-        text-align: center;
-    }
-
-    .box5 {
-        position: absolute;
-        border-color: rgb(35, 10, 189);
-        grid-column-start: 1;
-        grid-column-end: 4;
-    }
-
-    .box3 {
-        border-color: rgb(31, 28, 199);
-    }
-
-    .box2 {
-        border-color: rgb(31, 28, 199);
-    }
-</style>
-
 <body style="background-color: black">
     <div class="topBar" id="topBar">
         <div class="logoWrapper">
@@ -140,8 +77,8 @@
     </nav>
 
     <div class="mainBody">
-        <div class="gridWrapper">
-            <div class="box1">
+        <div class="aboutGridWrapper">
+            <div class="aboutbox1">
                 The Art Studio 23 LLC is a small art studio at a big community, and you can enjoy the best that both
                 have to offer for educating, exploring and inspiring. Currently, we are focusing on the following
                 <b style="color: rgb(100, 136, 214)">two age groups:</b>
@@ -160,14 +97,14 @@
                     </li>
                 </ol>
             </div>
-            <div class="box2">
+            <div class="aboutbox2">
                 <b style="color: rgb(246, 241, 10);">Our teaching philosophy</b> is to help students to become
                 successful designers, artists, scholars and
                 citizens who enhance human experience, improve the quality of life and advance environmental
                 sustainability; and to serve as a resource for our great state and beyond through research, creative
                 endeavors, extension and outreach.
             </div>
-            <div class="box3">
+            <div class="aboutbox3">
                 <b style="color: rgb(246, 241, 10);">Our teaching methods</b> are focused on innovation, curiosity,
                 collaboration, open exchange of ideas,
                 diverse perspectives, and environmental and social responsibility.
@@ -175,8 +112,10 @@
                 <br>
                 The founder and art director of Art Studio 23 LLC is Jeff Zhou from Skillman, New Jersey.
             </div>
-            <div class="box4">
-                Jeff Zhou
+            <div class="aboutbox4">
+                <b class="text">
+                    Jeff Zhou
+                </b>
                 <p style="text-align: left;">
                     EDUCATION:
                     <ul style="text-align: left;">
@@ -198,8 +137,10 @@
                     </ul>
                 </p>
             </div>
-            <div class="box5">
-                <p style="text-align: center;">Jeff Zhou Continued</p>
+            <div class="aboutbox5">
+                <b class="text">
+                    <p style="text-align: center;">Jeff Zhou Continued</p>
+                </b>
                 <p style="text-align: left;">
                     JOB RELATED EXPERIENCE:
                     <ul>

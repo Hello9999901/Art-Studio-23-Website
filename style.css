@@ -63,11 +63,36 @@ body::-webkit-scrollbar {
     src: url(fonts/TitilliumWeb-SemiBold.ttf);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .logoWrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
     margin-left: 35px;
@@ -77,12 +102,9 @@ body::-webkit-scrollbar {
 }
 
 .logo {
-    -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
-    -webkit-animation: fadeInLeft;
     animation: fadeInLeft;
-    -webkit-animation-duration: var(--anim-dur);
     animation-duration: var(--anim-dur);
     height: 100px;
 }
@@ -92,7 +114,6 @@ body::-webkit-scrollbar {
 }
 
 .topBar {
-    -webkit-transition: 0.6s;
     -o-transition: 0.6s;
     transition: 0.6s;
     z-index: 2;
@@ -110,10 +131,15 @@ body::-webkit-scrollbar {
     font-size: 40px;
     margin-top: 3px;
     font-family: Titillium-SemiBold;
-    -webkit-animation: fadeInRight;
     animation: fadeInRight;
-    -webkit-animation-duration: var(--anim-dur);
     animation-duration: var(--anim-dur);
+}
+
+@media screen and (max-width: 987px) {
+    .topBarTextWrapper {
+        visibility: hidden;
+        opacity: 0;
+    }
 }
 
 .topBarText {
@@ -121,7 +147,6 @@ body::-webkit-scrollbar {
     text-decoration: none;
     padding-right: 25px;
     color: rgb(255, 255, 255);
-    -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
 }
@@ -137,9 +162,7 @@ body::-webkit-scrollbar {
     background-color: rgba(47, 91, 186, 0.823);
     margin-top: 10px;
     height: 10px;
-    -webkit-animation: zoomIn;
     animation: zoomIn;
-    -webkit-animation-duration: var(--anim-dur);
     animation-duration: var(--anim-dur);
 }
 
@@ -149,14 +172,23 @@ body::-webkit-scrollbar {
     height: auto;
     border-radius: 2px;
     margin-left: 8px;
-    -webkit-animation: fadeIn;
     animation: fadeIn;
-    -webkit-animation-duration: var(--anim-dur);
     animation-duration: var(--anim-dur);
-    -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
     padding: 10px 20px 20px 20px;
+}
+
+@media screen and (max-width: 1400px) {
+    .pictures {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .pictures {
+        width: 90%;
+    }
 }
 
 .mainBody {
@@ -166,11 +198,25 @@ body::-webkit-scrollbar {
     right: 0px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* LOCATION PAGE */
+
 .locationMapWrapper {
     position: absolute;
-    -webkit-animation: fadeInRight;
     animation: fadeInRight;
-    -webkit-animation-duration: var(--anim-dur);
     animation-duration: var(--anim-dur);
     margin: auto;
     display: block;
@@ -178,20 +224,18 @@ body::-webkit-scrollbar {
 
 .locationTextWrapper {
     position: absolute;
-    -webkit-animation: fadeInLeft;
     animation: fadeInLeft;
-    -webkit-animation-duration: var(--anim-dur);
     animation-duration: var(--anim-dur);
 }
 
 .locationTextWrapper p {
     margin: 0px;
-    font-size: 22px;
+    font-size: calc(7px + 1.181vw);
 }
 
 .locationTextWrapper .title {
-    font-size: 38px;
-    margin-bottom: 20px;
+    font-size: calc(10px + 2.1vw);
+    margin-bottom: 22px;
 }
 
 .map {
@@ -199,22 +243,250 @@ body::-webkit-scrollbar {
     width: 55.556vw;
 }
 
+.locationGridWrapper {
+    position: relative;
+    justify-content: center;
+    grid-template-columns: 37vw 64vw;
+    text-align: left;
+    display: grid;
+    grid-gap: 17px;
+    color: white;
+    font-family: Titillium-Regular;
+}
+
+.locationGridWrapper div {
+    position: relative;
+    padding: 45px 75px 2vw 75px;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 987px) {
+    .locationGridWrapper div {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MAIN PAGE */
+.mainGridWrapper {
+    position: relative;
+    justify-content: center;
+    grid-template-columns: 49vw 49vw;
+    text-align: left;
+    display: grid;
+    grid-gap: 17px;
+    color: white;
+    font-family: Titillium-Regular;
+    animation: fadeInLeft;
+    animation-duration: var(--anim-dur);
+}
+
+.mainGridWrapper div {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.111);
+    padding: 45px 75px 250px 75px;
+    border-radius: 10px;
+}
+
+.mainbox1 {
+    position: absolute;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    /* padding: 30px 75px 30px 75px !important; */
+    padding: 2.083vw 5.208vw 2.083vw 5.208vw !important;
+}
+
+.mainbox2 {
+    position: absolute;
+    padding: 2.778vw 5.208vw 4.167vw 5.208vw !important;
+}
+
+.mainbox3 {
+    position: absolute;
+    padding: 2.778vw 5.208vw 4.167vw 5.208vw !important;
+}
+
+.mainbox4 {
+    position: absolute;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    padding: 30px 75px 30px 75px !important;
+    font-size: calc(10px + 1.389vw);
+}
+
+.text {
+    font-family: Titillium-Light;
+    font-size: calc(10px + 1.389vw);
+}
+
+.boldText {
+    font-family: Titillium-Light;
+    font-size: calc(10px + 1.389vw) !important;
+}
+
+.welcomeText {
+    font-size: calc(15px + 1.5vw);
+}
+
+.welcomeLowerText {
+    color: rgb(211, 211, 211);
+    font-family: Titillium-ExtraLight;
+    font-size: calc(1.389vw + 5px);
+}
+
+@media screen and (max-width: 987px) {
+    .mainbox2 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .mainbox3 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ABOUT PAGE */
+.aboutGridWrapper {
+    position: relative;
+    justify-content: center;
+    grid-template-columns: 30.639vw 30.639vw 30.972vw;
+    text-align: left;
+    display: grid;
+    grid-gap: 17px;
+    color: white;
+    font-family: Titillium-Regular;
+    animation: fadeInLeft;
+    animation-duration: var(--anim-dur);
+
+}
+
+.aboutGridWrapper div {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.062);
+    border-width: calc(0.486vw + 3px);
+    border-style: solid;
+    border-radius: 10px;
+    padding: 2.431vw 3.125vw 2.431vw 3.125vw;
+    font-size: calc(5px + 1.389vw);
+}
+
+.aboutbox1 {
+    position: absolute;
+    border-color: rgb(242, 29, 7);
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.aboutbox2 {
+    border-color: rgb(31, 28, 199);
+}
+
+.aboutbox3 {
+    border-color: rgb(31, 28, 199);
+}
+
+.aboutbox4 {
+    position: absolute;
+    border-color: rgb(246, 241, 10);
+    grid-column-start: 2;
+    grid-column-end: 4;
+    text-align: center;
+}
+
+.aboutbox5 {
+    position: absolute;
+    border-color: rgb(35, 10, 189);
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+@media screen and (max-width: 987px) {
+    .aboutGridWrapper div {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 
-██████████████████████████████████████████████████████████████████████████████████
-██████████████████████████████████████████████████████████████████████████████████
-██████████████████████████████████████████████████████████████████████████████████
-██████████████████████████████████████████████████████████████████████████████████
-█████████████████████████████████LOADER███████████████████████████████████████████
-██████████████████████████████████████████████████████████████████████████████████
-██████████████████████████████████████████████████████████████████████████████████
-██████████████████████████████████████████████████████████████████████████████████
-██████████████████████████████████████████████████████████████████████████████████
-██████████████████████████████████████████████████████████████████████████████████
-██████████████████████████████████████████████████████████████████████████████████
-██████████████████████████████████████████████████████████████████████████████████
-██████████████████████████████████████████████████████████████████████████████████
-██████████████████████████████████████████████████████████████████████████████████
-██████████████████████████████████████████████████████████████████████████████████ 
+
+LOADER
+
 */
 
 
@@ -229,7 +501,6 @@ body::-webkit-scrollbar {
     height: 10px;
     background: #3498db;
     border-radius: 5px;
-    -webkit-animation: load 1.8s ease-in-out infinite;
     animation: load 1.8s ease-in-out infinite;
 }
 
@@ -242,7 +513,6 @@ body::-webkit-scrollbar {
     position: absolute;
     display: block;
     content: "";
-    -webkit-animation: load 1.8s ease-in-out infinite;
     animation: load 1.8s ease-in-out infinite;
     height: 10px;
     border-radius: 5px;

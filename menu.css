@@ -161,7 +161,7 @@ absolute top left
     transform: none;
 }
 
-@media screen and (max-width: 816px) {
+@media screen and (max-width: 987px) {
     #menuToggle {
         opacity: 1;
         visibility: visible;

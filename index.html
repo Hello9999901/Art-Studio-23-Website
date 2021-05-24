@@ -27,81 +27,11 @@
     <link rel="icon" type="image/png" href="#">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./menu.css">
-    <link rel="stylesheet" href="../../../Downloads/animated-hamburger-menu/dist/style.css">
-
     <script src="./scripts.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.max.css" />
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.max.js"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
         integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 </head>
-
-<style>
-    .gridWrapper {
-        position: relative;
-        justify-content: center;
-        grid-template-columns: 49vw 49vw;
-        text-align: left;
-        display: grid;
-        grid-gap: 17px;
-        color: white;
-        font-family: Titillium-Regular;
-        animation: fadeInLeft;
-        animation-duration: var(--anim-dur);
-    }
-
-    .gridWrapper div {
-        position: relative;
-        background-color: rgba(255, 255, 255, 0.111);
-        padding: 45px 75px 250px 75px;
-        border-radius: 10px;
-    }
-
-    .box1 {
-        position: absolute;
-        grid-column-start: 1;
-        grid-column-end: 3;
-        text-align: center;
-        padding: 30px 75px 30px 75px !important;
-    }
-
-    .box2 {
-        position: absolute;
-        padding: 40px 75px 60px 75px !important;
-    }
-
-    .box3 {
-        position: absolute;
-        padding: 40px 75px 60px 75px !important;
-    }
-
-    .box4 {
-        position: absolute;
-        grid-column-start: 1;
-        grid-column-end: 3;
-        text-align: center;
-        padding: 30px 75px 30px 75px !important;
-    }
-
-    .text {
-        font-family: Titillium-Light;
-        font-size: calc(5px + 1.389vw) !important;
-    }
-
-    .boldText {
-        font-family: Titillium-Light;
-        font-size: calc(10px + 1.389vw) !important;
-    }
-
-    .welcomeText {
-        font-size: calc(15px + 1.5vw);
-    }
-
-    .welcomeLowerText {
-        color: rgb(211, 211, 211);
-        font-family: Titillium-ExtraLight;
-        font-size: calc(1.389vw + 5px);
-    }
-</style>
 
 <body style="background-color: black">
     <div class="topBar" id="topBar">
@@ -147,8 +77,8 @@
     </nav>
 
     <div class="mainBody">
-        <div class="gridWrapper">
-            <div class="box1">
+        <div class="mainGridWrapper">
+            <div class="mainbox1">
                 <b class="welcomeText">
                     WELCOME TO THE OFFICAL WEBSITE OF THE ART STUDIO 23!
                 </b>
@@ -157,7 +87,7 @@
                     EDUCATING, EXPLORING & INSPIRING OUR BEAUTIFUL COMMUNITY!
                 </p>
             </div>
-            <div class="box2">
+            <div class="mainbox2">
                 <b class="boldText">
                     URENT NOTICES:
                 </b>
@@ -169,7 +99,7 @@
                     turpis egestas.
                 </p>
             </div>
-            <div class="box3">
+            <div class="mainbox3">
                 <b class="boldText">
                     UPCOMING EVENTS:
                 </b>
@@ -182,7 +112,7 @@
                     et dolore magna aliqua.
                 </p>
             </div>
-            <div class="box4">
+            <div class="mainbox4">
                 SPONSORS HERE
             </div>
         </div>
