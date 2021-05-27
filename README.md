@@ -5,7 +5,7 @@ Website of Art Studio 23
 
 ### PLEASE READ: This documentation may look boring and long, but it is important that you understand the basics of how this website works.
 
-### NOTICE: Please read both this documentation and the [LOGISTICS.md](LOGISTICS.md)
+### NOTICE: Please read both this documentation, [LOGISTICS.md](LOGISTICS.md), AND [HOWTOEDIT.md](HOWTOEDIT.md)
 
 #### This website is made using HTML (HyperText Markup Language), CSS (Cascading Style Sheets), and JS (JavaScript). All usage is stricly vanilla.
 
