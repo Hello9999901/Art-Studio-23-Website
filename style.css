@@ -27,6 +27,8 @@ body {
     overflow-x: hidden;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    background-image:url("./media/jpg/BackgroundDesign.png");
+    background-size: 70%;
 }
 
 body::-webkit-scrollbar {
@@ -308,6 +310,8 @@ body::-webkit-scrollbar {
     background-color: rgba(255, 255, 255, 0.111);
     padding: 45px 75px 250px 75px;
     border-radius: 10px;
+    border-width: calc(0.486vw + 3px);
+    border-style: solid;
 }
 
 .mainbox1 {
@@ -317,16 +321,22 @@ body::-webkit-scrollbar {
     text-align: center;
     /* padding: 30px 75px 30px 75px !important; */
     padding: 2.083vw 5.208vw 2.083vw 5.208vw !important;
+    border-color: var(--blue-art-studio-23);
+    background-color: rgba(110, 131, 251, 0.123) !important;
 }
 
 .mainbox2 {
     position: absolute;
     padding: 2.778vw 5.208vw 4.167vw 5.208vw !important;
+    border-color: var(--yellow-art-studio-23);
+    background-color: rgba(230, 251, 110, 0.13) !important;
 }
 
 .mainbox3 {
     position: absolute;
     padding: 2.778vw 5.208vw 4.167vw 5.208vw !important;
+    border-color: var(--red-art-studio-23);
+    background-color: rgba(251, 110, 110, 0.111) !important;
 }
 
 .mainbox4 {
@@ -336,6 +346,8 @@ body::-webkit-scrollbar {
     text-align: center;
     padding: 30px 75px 30px 75px !important;
     font-size: calc(10px + 1.389vw);
+    border-color: var(--blue-art-studio-23);
+    background-color: rgba(110, 131, 251, 0.123) !important;
 }
 
 .text {
