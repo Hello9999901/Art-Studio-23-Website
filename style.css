@@ -27,7 +27,7 @@ body {
     overflow-x: hidden;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    background-image:url("./media/jpg/BackgroundDesign.png");
+    background-image: url("./media/jpg/BackgroundDesign.png");
     background-size: 70%;
 }
 
@@ -130,7 +130,7 @@ body::-webkit-scrollbar {
 .topBarTextWrapper {
     position: fixed;
     right: 15px;
-    font-size: 40px;
+    font-size: 1.778vw;
     margin-top: 3px;
     font-family: Titillium-SemiBold;
     animation: fadeInRight;
@@ -151,10 +151,6 @@ body::-webkit-scrollbar {
     color: rgb(255, 255, 255);
     -o-transition: 0.5s;
     transition: 0.5s;
-}
-
-.topBarText:hover {
-    color: rgb(120, 156, 223);
 }
 
 .barColor {
@@ -200,6 +196,33 @@ body::-webkit-scrollbar {
     right: 0px;
 }
 
+.homeLink {
+    color: var(--blue-art-studio-23);
+}
+
+.aboutLink {
+    color: var(--red-art-studio-23);
+}
+
+.aboutLink:hover {
+    color: rgb(53, 100, 255);
+}
+
+.locContLink {
+    color: var(--yellow-art-studio-23);
+}
+
+.locContLink:hover {
+    color: var(--red-art-studio-23);
+}
+
+.awardsLink {
+    color: rgb(53, 100, 255);
+}
+
+.awardsLink:hover {
+    color: var(--yellow-art-studio-23);
+}
 
 
 
@@ -375,9 +398,14 @@ body::-webkit-scrollbar {
         grid-column-start: 1;
         grid-column-end: 3;
     }
+
     .mainbox3 {
         grid-column-start: 1;
         grid-column-end: 3;
+    }
+
+    .mainGridWrapper {
+        grid-template-columns: 45vw 45vw;
     }
 }
 

@@ -57,9 +57,9 @@ CHANGE BELOW:
                 </picture>
             </a>
             <div class="topBarTextWrapper">
-                <a class="topBarText" href="./about.html">About</a>
-                <a class="topBarText" href="./location.html">Location & Contacts</a>
-                <a class="topBarText" href="./awards.html">Awards</a>
+                <a class="topBarText aboutLink" href="./about.html">About</a>
+                <a class="topBarText locContLink" href="./location.html">Location & Contacts</a>
+                <a class="topBarText awardsLink" href="./awards.html">Awards</a>
             </div>
         </div>
         <div class="barColor">
