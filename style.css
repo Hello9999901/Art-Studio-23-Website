@@ -108,7 +108,8 @@ body::-webkit-scrollbar {
     transition: 0.3s;
     animation: fadeInLeft;
     animation-duration: var(--anim-dur);
-    height: 100px;
+    height: calc(1.472vw + 70px);
+    width: auto;
 }
 
 .logo:hover {
@@ -130,7 +131,7 @@ body::-webkit-scrollbar {
 .topBarTextWrapper {
     position: fixed;
     right: 15px;
-    font-size: 1.778vw;
+    font-size: calc(12px + 0.9vw);
     margin-top: 3px;
     font-family: Titillium-SemiBold;
     animation: fadeInRight;
@@ -224,6 +225,17 @@ body::-webkit-scrollbar {
     color: var(--yellow-art-studio-23);
 }
 
+footer {
+    display: flex;
+    justify-content: left;
+    padding: 5px;
+    background-color: #000000a1;
+    color: rgb(236, 236, 236);
+    margin-top: 220px;
+    margin-left: 50px;
+    font-size: calc(5px + 0.5vw);
+    font-family: Titillium-Light !important;
+}
 
 
 
