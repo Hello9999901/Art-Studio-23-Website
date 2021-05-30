@@ -190,6 +190,15 @@ body::-webkit-scrollbar {
     }
 }
 
+@media screen and (max-width: 800px) {
+    .logoWrapper {
+        height: 74px;
+    }
+    #menuToggle {
+        top: 35px !important;
+    }
+}
+
 .mainBody {
     position: absolute;
     margin-top: 139px;
@@ -506,6 +515,9 @@ footer {
     .aboutGridWrapper div {
         grid-column-start: 1;
         grid-column-end: 4;
+    }
+    .mainGridWrapper {
+        grid-template-columns: 40vw;
     }
 }
 
