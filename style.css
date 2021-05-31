@@ -246,6 +246,19 @@ footer {
     font-family: Titillium-Light !important;
 }
 
+customCode {
+    display: flex;
+    padding: 5px;
+    font-size: calc(5px + 0.5vw);
+    font-family: monospace !important;
+}
+
+customCode a {
+    color: rgb(236, 236, 236) !important;
+    text-decoration: none !important;
+}
+
+
 
 
 
