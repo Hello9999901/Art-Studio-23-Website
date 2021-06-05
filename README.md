@@ -193,5 +193,7 @@ Below is the web interface for GitHub. It looks a little complex, but for good r
 11. Press "Commit to **main**"
 ![12](/media/.artstudio23tutorialimages/12.png)
 
-12. Lastly, press "Push Origin". The button will only appear **after** you commit to main.
+12. Lastly, press "Push Origin". The button will only appear **after** you commit to main. Lastly, check https://www.artstudio23.org (it should update within 1-2 minutes or less) to see if the site has updated (you might have to refresh the page manually)!
 ![13](/media/.artstudio23tutorialimages/13.png)
+
+
