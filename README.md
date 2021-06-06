@@ -146,6 +146,8 @@
 
 # How To Add/Change artstudio23.org
 
+# **IMPORTANT NOTE: THERE ARE 2 WAYS, ONE MORE COMPLEX (BELOW) and ONE SIMPLER ([Click Here](simplerVersion.md)).** The simpler one is easier, but can be confusing.
+
 ### The process is rather complex for the first time, but will ease in difficulty as the process is the same each time.
 
 ## NOTE: Be sure to fetch the "origin" from Github Desktop like this:
